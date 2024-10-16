@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Center Readiness Tracker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.0.0"></script>
+</head>
+<body>
+    <div id="chartContainer">
+        <canvas id="maintenanceChart"></canvas>
+        <canvas id="basicChart"></canvas>
+        <canvas id="advancedChart"></canvas>
+        <canvas id="sustainmentChart"></canvas>
+    </div>
+    <div id="resourceContainer">
+        <!-- Resources will be populated here by JavaScript -->
+    </div>
+    <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText">Service Center Info</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

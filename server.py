@@ -1,0 +1,61 @@
+#!/usr/bin/env python3
+from http.server import HTTPServer, BaseHTTPRequestHandler
+import json
+import os
+
+class CustomHTTPRequestHandler(BaseHTTPRequestHandler):
+    def _send_response(self, content, content_type='text/html', status=200):
+        self.send_response(status)
+        self.send_header('Content-type', content_type)
+        self.end_headers()
+        self.wfile.write(content)
+
+    def do_GET(self):
+        if self.path == '/':
+            self.path = '/index.html'
+
+        try:
+            # Construct the full path
+            full_path = os.path.join(os.getcwd(), self.path.lstrip('/'))
+
+            # Determine MIME type (extend as needed)
+            content_type = 'text/html'
+            if self.path.endswith('.css'):
+                content_type = 'text/css'
+            elif self.path.endswith('.js'):
+                content_type = 'application/javascript'
+            elif self.path.endswith('.json'):
+                content_type = 'application/json'
+
+            # Read and send the file content
+            with open(full_path, 'rb') as file:
+                self._send_response(file.read(), content_type=content_type)
+
+        except FileNotFoundError:
+            self._send_response(b'File not found', status=404)
+
+    def do_POST(self):
+        try:
+            # Handle POST requests for updating data
+            content_length = int(self.headers['Content-Length'])
+            post_data = self.rfile.read(content_length)
+            data = json.loads(post_data.decode('utf-8'))
+
+            # Write the updated data to data.json
+            with open('data.json', 'w') as f:
+                json.dump(data, f, indent=4)
+
+            self._send_response(b"Data updated successfully.", content_type='text/plain')
+
+        except Exception as e:
+            self._send_response(str(e).encode(), status=500)
+
+
+def run(server_class=HTTPServer, handler_class=CustomHTTPRequestHandler):
+    httpd = HTTPServer(('localhost', 8000), CustomHTTPRequestHandler)
+    print(f'Serving at http://localhost:8000')
+    httpd.serve_forever()
+
+if __name__ == '__main__':
+    run()
+

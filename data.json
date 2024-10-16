@@ -1,0 +1,362 @@
+{
+    "1": {
+        "phase": "Maintenance",
+        "daysToNextPhase": 10,
+        "jobs": {
+            "A": 0,
+            "B": 1,
+            "C": 0
+        },
+        "equipment": {
+            "A": 1,
+            "B": 1,
+            "C": 1
+        },
+        "events": {
+            "A": 1,
+            "B": 0,
+            "C": 0
+        },
+        "missionReadiness": {
+            "A": 33.333333333333336,
+            "B": 33.333333333333336,
+            "C": 16.666666666666668
+        },
+        "missionColors": {
+            "A": "red",
+            "B": "red",
+            "C": "red"
+        },
+        "readiness": 27.777777777777782
+    },
+    "2": {
+        "phase": "Maintenance",
+        "daysToNextPhase": 8,
+        "jobs": {
+            "A": 1,
+            "B": 1,
+            "C": 0
+        },
+        "equipment": {
+            "A": 1,
+            "B": 1,
+            "C": 0
+        },
+        "events": {
+            "A": 0,
+            "B": 1,
+            "C": 0
+        },
+        "missionReadiness": {
+            "A": 33.333333333333336,
+            "B": 50,
+            "C": 0
+        },
+        "missionColors": {
+            "A": "red",
+            "B": "red",
+            "C": "red"
+        },
+        "readiness": 27.777777777777782
+    },
+    "3": {
+        "phase": "Maintenance",
+        "daysToNextPhase": 15,
+        "jobs": {
+            "A": 0,
+            "B": 1,
+            "C": 1
+        },
+        "equipment": {
+            "A": 0,
+            "B": 0,
+            "C": 1
+        },
+        "events": {
+            "A": 1,
+            "B": 0,
+            "C": 1
+        },
+        "missionReadiness": {
+            "A": 16.666666666666668,
+            "B": 16.666666666666668,
+            "C": 50
+        },
+        "missionColors": {
+            "A": "red",
+            "B": "red",
+            "C": "red"
+        },
+        "readiness": 27.777777777777782
+    },
+    "4": {
+        "phase": "Basic",
+        "daysToNextPhase": 10,
+        "jobs": {
+            "A": 2,
+            "B": 1,
+            "C": 2
+        },
+        "equipment": {
+            "A": 2,
+            "B": 1,
+            "C": 2
+        },
+        "events": {
+            "A": 1,
+            "B": 1,
+            "C": 1
+        },
+        "missionReadiness": {
+            "A": 83.33333333333333,
+            "B": 50,
+            "C": 83.33333333333333
+        },
+        "missionColors": {
+            "A": "yellow",
+            "B": "red",
+            "C": "yellow"
+        },
+        "readiness": 72.22222222222221
+    },
+    "5": {
+        "phase": "Basic",
+        "daysToNextPhase": 5,
+        "jobs": {
+            "A": 1,
+            "B": 2,
+            "C": 2
+        },
+        "equipment": {
+            "A": 2,
+            "B": 2,
+            "C": 2
+        },
+        "events": {
+            "A": 2,
+            "B": 1,
+            "C": 1
+        },
+        "missionReadiness": {
+            "A": 83.33333333333333,
+            "B": 83.33333333333333,
+            "C": 83.33333333333333
+        },
+        "missionColors": {
+            "A": "yellow",
+            "B": "yellow",
+            "C": "yellow"
+        },
+        "readiness": 83.33333333333333
+    },
+    "6": {
+        "phase": "Basic",
+        "daysToNextPhase": 25,
+        "jobs": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+        },
+        "equipment": {
+            "A": 0,
+            "B": 1,
+            "C": 1
+        },
+        "events": {
+            "A": 1,
+            "B": 2,
+            "C": 2
+        },
+        "missionReadiness": {
+            "A": 16.666666666666668,
+            "B": 50,
+            "C": 50
+        },
+        "missionColors": {
+            "A": "red",
+            "B": "red",
+            "C": "red"
+        },
+        "readiness": 38.88888888888889
+    },
+    "7": {
+        "phase": "Advanced",
+        "daysToNextPhase": 15,
+        "jobs": {
+            "A": 1,
+            "B": 1,
+            "C": 1
+        },
+        "equipment": {
+            "A": 2,
+            "B": 1,
+            "C": 2
+        },
+        "events": {
+            "A": 1,
+            "B": 2,
+            "C": 1
+        },
+        "missionReadiness": {
+            "A": 50,
+            "B": 50,
+            "C": 16.666666666666668
+        },
+        "missionColors": {
+            "A": "red",
+            "B": "red",
+            "C": "red"
+        },
+        "readiness": 38.88888888888889
+    },
+    "8": {
+        "phase": "Advanced",
+        "daysToNextPhase": 7,
+        "jobs": {
+            "A": 1,
+            "B": 2,
+            "C": 2
+        },
+        "equipment": {
+            "A": 2,
+            "B": 2,
+            "C": 2
+        },
+        "events": {
+            "A": 2,
+            "B": 2,
+            "C": 2
+        },
+        "missionReadiness": {
+            "A": 100,
+            "B": 116.66666666666667,
+            "C": 150
+        },
+        "missionColors": {
+            "A": "green",
+            "B": "green",
+            "C": "green"
+        },
+        "readiness": 122.22222222222223
+    },
+    "9": {
+        "phase": "Advanced",
+        "daysToNextPhase": 35,
+        "jobs": {
+            "A": 2,
+            "B": 1,
+            "C": 1
+        },
+        "equipment": {
+            "A": 2,
+            "B": 2,
+            "C": 1
+        },
+        "events": {
+            "A": 2,
+            "B": 1,
+            "C": 2
+        },
+        "missionReadiness": {
+            "A": 100,
+            "B": 66.66666666666667,
+            "C": 66.66666666666667
+        },
+        "missionColors": {
+            "A": "green",
+            "B": "yellow",
+            "C": "yellow"
+        },
+        "readiness": 77.77777777777779
+    },
+    "10": {
+        "phase": "Sustainment",
+        "daysToNextPhase": 0,
+        "jobs": {
+            "A": 0,
+            "B": 1,
+            "C": 2
+        },
+        "equipment": {
+            "A": 1,
+            "B": 2,
+            "C": 2
+        },
+        "events": {
+            "A": 1,
+            "B": 2,
+            "C": 2
+        },
+        "missionReadiness": {
+            "A": 33.333333333333336,
+            "B": 83.33333333333333,
+            "C": 100
+        },
+        "missionColors": {
+            "A": "red",
+            "B": "yellow",
+            "C": "green"
+        },
+        "readiness": 72.22222222222221
+    },
+    "11": {
+        "phase": "Sustainment",
+        "daysToNextPhase": 0,
+        "jobs": {
+            "A": 2,
+            "B": 1,
+            "C": 1
+        },
+        "equipment": {
+            "A": 1,
+            "B": 2,
+            "C": 1
+        },
+        "events": {
+            "A": 2,
+            "B": 2,
+            "C": 2
+        },
+        "missionReadiness": {
+            "A": 83.33333333333333,
+            "B": 83.33333333333333,
+            "C": 66.66666666666667
+        },
+        "missionColors": {
+            "A": "yellow",
+            "B": "yellow",
+            "C": "yellow"
+        },
+        "readiness": 77.77777777777777
+    },
+    "12": {
+        "phase": "Sustainment",
+        "daysToNextPhase": 0,
+        "jobs": {
+            "A": 1,
+            "B": 1,
+            "C": 2
+        },
+        "equipment": {
+            "A": 2,
+            "B": 2,
+            "C": 2
+        },
+        "events": {
+            "A": 2,
+            "B": 1,
+            "C": 2
+        },
+        "missionReadiness": {
+            "A": 83.33333333333333,
+            "B": 66.66666666666667,
+            "C": 100
+        },
+        "missionColors": {
+            "A": "yellow",
+            "B": "yellow",
+            "C": "green"
+        },
+        "readiness": 83.33333333333333
+    }
+}
